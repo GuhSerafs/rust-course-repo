@@ -2,7 +2,9 @@
 use utils::vect_statistics;
 
 fn main() {
-    let v: Vec<isize> = [8, 4, 5, 4, 3, 2, 1, 0].to_vec();
+    let v: Vec<isize> = [1, 2, 3, 4, 5, 6, 7].to_vec();
 
-    println!("Média: {}", vect_statistics::average(v))
+    println!("Media: {}", vect_statistics::average(&v));
+    println!("Mediana: {}", vect_statistics::median(&v));
+    println!("Moda: {:?}", vect_statistics::mode(&v));
 }
