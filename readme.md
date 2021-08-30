@@ -1,2 +1,2 @@
 # Estudos de Rust
-Neste repositório estão os códigos criados durante o curso de Rust na Udemy.
+Neste repositório estão os códigos criados durante os estudos sobre a linguagem Rust. Atualmente, estou usando o livro <em>The Rust Programming Language</em> e/ou seguindo o curso <em>Learn Rust by Building Real Applications</em>
