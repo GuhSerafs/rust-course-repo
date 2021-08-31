@@ -50,17 +50,17 @@ pub mod vect_statistics {
         let mut incidences = HashMap::new();
         let mut maxv: isize = 1;
         let mut modes: Vec<isize> = Vec::new();
-        for item in v {
-            let count = incidences.entry(item).or_insert(0);
+        for item in v.iter() {
+            let count = incidences.entry(item).or_insert(0); // Retorna uma referência ao valor
             *count += 1;
         }
-        for (_k, v) in &incidences {
+        for (_k, v) in incidences.iter() {
             if v > &maxv {
                 maxv = *v;
             }
         }
         if (maxv) != 1 {
-            for (k, v) in &incidences {
+            for (k, v) in incidences.iter() {
                 if v == &maxv {
                     modes.push(**k);
                 }
