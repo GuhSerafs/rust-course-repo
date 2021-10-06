@@ -1,4 +1,4 @@
-use std::ops::Deref;
+use std::{ops::Deref, rc::Rc};
 
 
 /*
@@ -13,6 +13,11 @@ enum List {
 
 pub enum List {
     Cons(i32, Box<List>),
+    Nil,
+}
+
+pub enum RcList {
+    Cons(i32, Rc<RcList>), 
     Nil,
 }
 
