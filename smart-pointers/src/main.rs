@@ -1,4 +1,4 @@
-use utils::List::{Cons, Nil};
+use utils::BoxList::{Cons, Nil};
 
 fn main() {
     first_example();
