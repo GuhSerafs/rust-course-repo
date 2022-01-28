@@ -1,5 +1,5 @@
 [package]
-name = "fundtypes"
+name = "exagerated_fizzbuzz"
 version = "0.1.0"
 edition = "2021"
 
